@@ -3,15 +3,35 @@
 <head>
     <title>Login</title>
     <style>
-        body{ font: 14px sans-serif; align-items: center; justify-content: center;}
-        .wrapper{ width: 360px; padding: 20px;}
+        body{
+height: 480px;
+background-color:seashell;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+padding: 0 10px;
+}
+.wrapper{
+background-color:aqua;
+margin:10px;
+border:2px solid black;
+border-radius:10px;
+padding:10px;
+width:350px;
+height:300px;
+text-align: left;
+}
+.a{
+    text-align: center;
+}
     </style>
 </head>
 <body>
     <div class="wrapper">
-        <h2>Login</h2>
+        <h2 class="a">Login</h2>
         <p>Please fill in your credentials to login.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form action="" method="post">
             <div>
                 <label>Username</label>
                 <input type="text" name="username">
@@ -21,7 +41,7 @@
                 <input type="password" name="password">
             </div>
             <p>Forget Password? <a href="">click here</a>.</p>
-            <div class="form-group"><input type="submit" value="Login"></div>
+            <div class="a"><input type="submit" value="Submit"></div>
             <p>Don't have an account? <a href="">Sign up now</a>.</p>
         </form>
     </div>
